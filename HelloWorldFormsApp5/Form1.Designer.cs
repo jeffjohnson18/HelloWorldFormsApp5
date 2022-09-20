@@ -28,12 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnHelloButtonTest = new System.Windows.Forms.Button();
+            this.lblHelloWorldLabel = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // btnHelloButtonTest
+            // 
+            this.btnHelloButtonTest.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnHelloButtonTest.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnHelloButtonTest.Location = new System.Drawing.Point(440, 78);
+            this.btnHelloButtonTest.Name = "btnHelloButtonTest";
+            this.btnHelloButtonTest.Size = new System.Drawing.Size(140, 50);
+            this.btnHelloButtonTest.TabIndex = 0;
+            this.btnHelloButtonTest.Text = "Click Here";
+            this.btnHelloButtonTest.UseVisualStyleBackColor = true;
+            this.btnHelloButtonTest.Click += new System.EventHandler(this.ButtonOnClick);
+            // 
+            // lblHelloWorldLabel
+            // 
+            this.lblHelloWorldLabel.AutoSize = true;
+            this.lblHelloWorldLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblHelloWorldLabel.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblHelloWorldLabel.Location = new System.Drawing.Point(514, 181);
+            this.lblHelloWorldLabel.Name = "lblHelloWorldLabel";
+            this.lblHelloWorldLabel.Size = new System.Drawing.Size(80, 36);
+            this.lblHelloWorldLabel.TabIndex = 1;
+            this.lblHelloWorldLabel.Text = "label";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblHelloWorldLabel);
+            this.Controls.Add(this.btnHelloButtonTest);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private Button btnHelloButtonTest;
+        private Label lblHelloWorldLabel;
     }
 }
